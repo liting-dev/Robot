@@ -12,8 +12,8 @@ inputs:
   handler: index.main_handler
   environment: 
       variables:  
-        secretid: AKID30mNrAFaJuVwERoLfqroaCsOmBQUcEr7
-        secretkey: J8uVDnEUYRAoLWEsgNrB61fHm9XkmkYA
+        secretid: 123
+        secretkey: 123
   events: 
       - timer: 
           name: timer
