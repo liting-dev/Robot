@@ -28,13 +28,12 @@ $ choco install serverless
 
 ### 一. 创建机器人
 企业微信群聊右键选择「添加群机器人」，输入机器人名称，添加完成后复制 webhook 地址并记录。
-![](https://main.qcloudimg.com/raw/b5c6d4ca0723e84f78e7eb8d144b00b7.png)
-![](https://main.qcloudimg.com/raw/21ef847b50d2b62168a2064c5a851d61.png)
+![](https://main.qcloudimg.com/raw/26675d5eb7fb9d2f9e541f6df273075a.png)
 
 ### 二. 修改代码
 在本地打开 Demo 代码，修改 `Robot/src/index.py` 里的「企业微信机器人 webhook」为上述地址。
 修改 `Robot/serverless.yml` 里的 `secretid`,`secretkey` 。
-![](https://main.qcloudimg.com/raw/95bccecc913d97d5ca7aa9b054138bc9.png)
+![](https://main.qcloudimg.com/raw/f8fb4e203bfc9b39c260aadad65b3b6d.png)
 ![](https://main.qcloudimg.com/raw/38c372bee4260ed1acf5ffea5fe98d24.png)
 
 ### 三. 部署
