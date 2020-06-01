@@ -19,9 +19,8 @@ $ choco install serverless
 
 详情可参考[安装教程](https://cloud.tencent.com/document/product/583/44753)
 
-2. 下载 Demo 代码至本地
 
-3. [注册登录腾讯云账号](https://cloud.tencent.com/login?s_url=https%3A%2F%2Fconsole.cloud.tencent.com%2F),进入[秘钥管理](https://console.cloud.tencent.com/cam/capi)，创建秘钥对，将秘钥对复制记录。
+2. [注册登录腾讯云账号](https://cloud.tencent.com/login?s_url=https%3A%2F%2Fconsole.cloud.tencent.com%2F),进入[秘钥管理](https://console.cloud.tencent.com/cam/capi)，创建秘钥对，将秘钥对复制记录。
 
 
 
@@ -30,7 +29,12 @@ $ choco install serverless
 企业微信群聊右键选择「添加群机器人」，输入机器人名称，添加完成后复制 webhook 地址并记录。
 ![](https://main.qcloudimg.com/raw/26675d5eb7fb9d2f9e541f6df273075a.png)
 
-### 二. 修改代码
+### 二. 下载并修改代码
+
+下载代码
+```
+sls create --template-url https://github.com/liting-dev/Robot
+```
 1. 在本地打开 Demo 代码，修改 `Robot/src/index.py` 里的「企业微信机器人 webhook」为上述地址。
 ![](https://main.qcloudimg.com/raw/f8fb4e203bfc9b39c260aadad65b3b6d.png)
 
