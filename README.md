@@ -31,10 +31,14 @@ $ choco install serverless
 ![](https://main.qcloudimg.com/raw/26675d5eb7fb9d2f9e541f6df273075a.png)
 
 ### 二. 修改代码
-在本地打开 Demo 代码，修改 `Robot/src/index.py` 里的「企业微信机器人 webhook」为上述地址。
-修改 `Robot/serverless.yml` 里的 `secretid`,`secretkey` 。
+1. 在本地打开 Demo 代码，修改 `Robot/src/index.py` 里的「企业微信机器人 webhook」为上述地址。
 ![](https://main.qcloudimg.com/raw/f8fb4e203bfc9b39c260aadad65b3b6d.png)
+
+2. 修改 `Robot/serverless.yml` 里的 `secretid`,`secretkey` 。
 ![](https://main.qcloudimg.com/raw/38c372bee4260ed1acf5ffea5fe98d24.png)
+
+3. 修改`Robot/.env` 里的 `TENCENT_SECRET_ID`,`TENCENT_SECRET_KEY` 。
+![](https://main.qcloudimg.com/raw/f1ff08b9d1e15584fdf1437e1b1a7b8f.png)
 
 ### 三. 部署
 在 Robot 目录下执行部署命令,即可将 demo 部署至云函数。
