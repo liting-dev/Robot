@@ -46,8 +46,7 @@ def main_handler(event, context):
     data = {
         "msgtype": "text",
         "text": {
-            "content": "起来活动一下",
-            "mentioned_list":["@all"]
+            "content": "起来活动一下"
         }
     }
     data = json.dumps(data).encode("utf-8")
