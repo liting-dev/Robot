@@ -44,7 +44,7 @@ sls deploy
 ```
 
 ### 四. 查看 Demo 
-进入云函数控制台的函数列表即可查看已部署的 Robot 函数。
+进入[云函数控制台](https://console.cloud.tencent.com/scf/list?rid=1&ns=default)的函数列表即可查看已部署的 Robot 函数。
 点击函数名，进入代码编辑页，可点击「测试」触发企业微信机器人消息。
 ![](https://main.qcloudimg.com/raw/bc43f72e14f39be4e87ecd6a96a0f623.png)
 ![](https://main.qcloudimg.com/raw/4d2986f63bbf08a717dadd9f58c51d5b.png)
