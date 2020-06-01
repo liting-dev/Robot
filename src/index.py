@@ -42,7 +42,7 @@ def putData(client,instanceName,MetricName,Value):
 
 def main_handler(event, context):
     
-    url = 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=68df118b-853a-48ff-9fb1-6c7b79cc9cc1'
+    url = '企业微信机器人 webhook'
     data = {
         "msgtype": "text",
         "text": {
