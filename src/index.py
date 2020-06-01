@@ -57,12 +57,12 @@ def main_handler(event, context):
 
     try:
         req_attr = Request(url, data)
+        resp_attr = urlopen(req_attr)
     except Exception as e:
          #上报数据时，指标名称填写namespace和函数名称，中间用"|"分割
         print(putData(client,"default|Robot","fail_count",1))
         print('error:',e)
-    finally:
-        resp_attr = urlopen(req_attr)
+    finally: 
         print(putData(client,"default|Robot","suc_count",1))
-
+        
     return resp_attr.read().decode("utf-8")
