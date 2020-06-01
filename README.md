@@ -27,12 +27,15 @@ $ choco install serverless
 
 
 ### 一. 创建机器人
-企业微信群聊右键选择【添加群机器人】，输入机器人名称，添加完成后复制 webhook 地址并记录。
-
+企业微信群聊右键选择「添加群机器人」，输入机器人名称，添加完成后复制 webhook 地址并记录。
+![](https://main.qcloudimg.com/raw/b5c6d4ca0723e84f78e7eb8d144b00b7.png)
+![](https://main.qcloudimg.com/raw/21ef847b50d2b62168a2064c5a851d61.png)
 
 ### 二. 修改代码
-在本地打开 Demo 代码，修改 Robot/src/index.py 里的「企业微信机器人」 webhook 为上述地址。
-修改 Robot/serverless.yml 里的 secretid ,secretkey 。
+在本地打开 Demo 代码，修改 `Robot/src/index.py` 里的「企业微信机器人 webhook」为上述地址。
+修改 `Robot/serverless.yml` 里的 `secretid`,`secretkey` 。
+![](https://main.qcloudimg.com/raw/95bccecc913d97d5ca7aa9b054138bc9.png)
+![](https://main.qcloudimg.com/raw/38c372bee4260ed1acf5ffea5fe98d24.png)
 
 ### 三. 部署
 在 Robot 目录下执行部署命令,即可将 demo 部署至云函数。
@@ -43,8 +46,11 @@ sls deploy
 
 ### 四. 查看 Demo 
 进入云函数控制台的函数列表即可查看已部署的 Robot 函数。
-点击函数名，进入代码编辑页，可点击【测试】触发企业微信机器人消息。
+点击函数名，进入代码编辑页，可点击「测试」触发企业微信机器人消息。
+![](https://main.qcloudimg.com/raw/bc43f72e14f39be4e87ecd6a96a0f623.png)
+![](https://main.qcloudimg.com/raw/4d2986f63bbf08a717dadd9f58c51d5b.png)
 
 ### 五. 查看自定义监控
 如果你想监控云函数里的业务指标或自定义异常指标，可使用[自定义监控告警](https://cloud.tencent.com/document/product/583/41142)。
-本示例上报了发送成功和失败的指标
+本示例上报了发送成功和失败的指标,可以在[自定义监控页面](https://console.cloud.tencent.com/monitor/indicator-view?date=2020-05-28&quickTime=)查看:
+![](https://main.qcloudimg.com/raw/49d3a0d963faf5333b5a7eb20bd08a69.png)
