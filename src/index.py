@@ -27,7 +27,6 @@ def initMonitor(secretId,secretKey):
     except TencentCloudSDKException as err:
         print(err)
     return client
-    kkkk
 
 #自定义监控上报函数，传入函数名称，指标名称，指标值
 def putData(client,instanceName,MetricName,Value):
