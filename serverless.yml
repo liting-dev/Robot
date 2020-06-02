@@ -18,5 +18,5 @@ inputs:
       - timer: 
           name: timer
           parameters:
-            cronExpression: '*/5 * * * * * *'
+            cronExpression: '0 */60 10-21 * * MON-FRI *'
             enable: true
